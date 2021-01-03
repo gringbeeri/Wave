@@ -1,10 +1,9 @@
 #8
 summa = float(input("Введите сумму: "))
 tip = summa * 0.18
-print(tip)
-tax = summa * 0.7
-print(tax)
+print(f'Чаевые: {tip}')
+tax = summa * 0.07
+print(f'Налоговый сбор: {tax}')
 summa_tax = tip + tax
-print(summa_tax)
-result = summa - summa_tax
-print(result)
+result = summa + summa_tax
+print(f'Итоговая сумма: {result}')

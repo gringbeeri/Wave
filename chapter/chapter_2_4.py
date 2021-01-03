@@ -6,8 +6,8 @@ product_4 = float(input("Сумма 4 товара: "))
 product_5 = float(input("Сумма 5 товара: "))
 
 summa = product_1 + product_2 + product_3 + product_4 + product_5
-print(summa)
-tax_summa = summa * 0.7
-print(tax_summa)
+print(f'Накопленная стоимость: {summa}')
+tax_summa = summa * 0.07
+print(f'Сумма налога: {tax_summa}')
 result = summa + tax_summa
-print(result)
+print(f'Итоговая сумма: {result}')

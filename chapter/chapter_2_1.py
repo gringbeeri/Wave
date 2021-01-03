@@ -1,9 +1,9 @@
 #1
 name = input("Введите ваше имя: ")
 city = input("Введите ваш город: ")
-region = input("Введите ваш регион ")
-index = int(input("Введите ваш индекс: "))
-number = int(input("Введите ваш номер телефона: "))
+region = input("Введите ваш регион: ")
+index = input("Введите ваш индекс: ")
+number = input("Введите ваш номер телефона: ")
 specialty = input("Введите вашу специальность: ")
 
 print(f"Вас зовут {name}")
