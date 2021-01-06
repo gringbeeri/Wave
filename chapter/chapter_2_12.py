@@ -1,6 +1,6 @@
 #12
-number_shares_buy = 2000
-buy_shares = 40.00
+number_shares_buy = int(input("Число купленных акций: "))
+buy_shares = float(input("Сумма за покупку акции: "))
 result_buy_shares = number_shares_buy * buy_shares
 print(f'Сумма уплаченная за акции: {result_buy_shares}')
 procent_shares_buy = 0.03
@@ -9,8 +9,8 @@ print(f'Комиссия: {procent_buy}')
 result_buy = result_buy_shares + procent_buy
 print(f'Общая сумма уплаченная за акции: {result_buy}')
 
-number_shares_sale = 2000
-sale_shares = 42.75
+number_shares_sale = int(input("Число проданных акций: "))
+sale_shares = float(input("Сумма за продажу акции: "))
 result_sale_shares = number_shares_sale * sale_shares
 print(f'Сумма уплаченная за акции: {result_sale_shares}')
 procent_shares_sale = 0.03
