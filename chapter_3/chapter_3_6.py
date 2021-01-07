@@ -6,5 +6,7 @@ print(f'{day}.{month}.{year}')
 
 if day * int(month) == year:
     print('Ваш год волшебный!')
-else:
+elif day > 31 or day < 0 or month > 12 or month < 0 or year < 0:
+    print('Неверно введеный формат даты')
+elif day * int(month) != year:
     print('Обычный год')
