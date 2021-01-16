@@ -1,0 +1,18 @@
+#1
+lists = []
+day_1 = float(input('Продажи за 1 день: '))
+lists.append(day_1)
+day_2 = float(input('Продажи за 2 день: '))
+lists.append(day_2)
+day_3 = float(input('Продажи за 3 день: '))
+lists.append(day_3)
+day_4 = float(input('Продажи за 4 день: '))
+lists.append(day_4)
+day_5 = float(input('Продажи за 5 день: '))
+lists.append(day_5)
+day_6 = float(input('Продажи за 6 день: '))
+lists.append(day_6)
+day_7 = float(input('Продажи за 7 день: '))
+lists.append(day_7)
+result = sum(lists)
+print(result)
