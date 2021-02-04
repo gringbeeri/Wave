@@ -82,11 +82,18 @@ class Train:
         self.route.append(route)
         self.station = route[0]
         
-    def move_next(self, station):
-        self.station = station
+    def move_next(self):
+        for station in self.route:
+            self.station = station[0]
+        if self.station == station[0]:
+            del station[0]
     
-    def move_back(self, station):
-        self.station = station
+    def move_back(self):
+        # for station in self.route:
+        #     # print(self.route)
+        #     self.station = station[0]
+        #     if self.station == station[0]:
+        #         station.append([])
 
 #--------------------------------------------------------------------------------------------------------------------------------#
 #Объекты класса "Станция"
@@ -99,9 +106,9 @@ station_6 = Station('Kerch')
 
 #--------------------------------------------------------------------------------------------------------------------------------#
 #Объекты класса "Маршрут"
-route_1 = Route(station_1.name_station, station_6.name_station)
-route_1.add_station(station_3.name_station)
-route_1.add_station(station_4.name_station)
+route_1 = Route(station_1, station_6)
+route_1.add_station(station_3)
+route_1.add_station(station_4)
 route_1.list_complete_stations()
 #--------------------------------------------------------------------------------------------------------------------------------#
 #Объекты класса "Поезд"
@@ -114,16 +121,9 @@ train_3 = Train('7474', 'грузовой', 98)
 station_1.take_train(train_3)
 train_3.take_route(route_1.list_stations)
 print(train_3.__dict__)
-train_3.move_next(route_1.list_stations[1])
+train_3.move_next()
 print(train_3.__dict__)
-train_3.move_next(route_1.list_stations[2])
+train_3.move_next()
 print(train_3.__dict__)
-
-
-
-
-
-
-
-    
-
+train_3.move_next()
+print(train_3.__dict__)
